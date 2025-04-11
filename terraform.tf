@@ -3,18 +3,27 @@
 
 terraform {
 
+/*
   cloud {
-    organization = "organization-name"
+    organization = "tutorial-HCP-mzdan"
 
     workspaces {
       name = "learn-terraform"
     }
   }
+*/
+
+  # required_providers {
+  #   aws = {
+  #     source  = "hashicorp/aws"
+  #     version = "~> 5.31.0"
+  #   }
+  # }
 
   required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.31.0"
+    cloudflare = {
+      source = "cloudflare/cloudflare"
+      version = "~> 5.3.0"
     }
   }
 
