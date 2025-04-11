@@ -3,7 +3,7 @@
 
 terraform {
 
-/*
+  /*
   cloud {
     organization = "tutorial-HCP-mzdan"
 
@@ -11,7 +11,7 @@ terraform {
       name = "learn-terraform"
     }
   }
-*/
+  */
 
   # required_providers {
   #   aws = {
@@ -22,7 +22,7 @@ terraform {
 
   required_providers {
     cloudflare = {
-      source = "cloudflare/cloudflare"
+      source  = "cloudflare/cloudflare"
       version = "~> 5.3.0"
     }
   }
