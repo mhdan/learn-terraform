@@ -34,10 +34,10 @@ provider "cloudflare" {}
 
 resource "cloudflare_dns_record" "chert_record" {
   zone_id = var.zone_id
-  type = "A"
-  name = var.name
+  type    = "A"
+  name    = var.name
   content = var.content
-  ttl = 3600
+  ttl     = 3600
   # proxied = false
   comment = var.comment
   # tags = ["owner:dns-team"]
